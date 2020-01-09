@@ -1,4 +1,4 @@
-const Piquero = require('./Guerrero')
+const Guerrero = require('./Guerrero')
 //===================================
 
 

@@ -1,4 +1,4 @@
-const C9vilizacion = require('./Civlizacion')
+const Civilizacion = require('./Civlizacion')
 //===================================
 
 class World {
