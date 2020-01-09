@@ -15,17 +15,41 @@ class Ejercito {
         this.puntos = 0
     }
 
-    agregarPiquero() {
-        this.piquero.push(new Guerrero("piquero", 5))
-        this.updatePuntos()
+    init(name){
+        if(name == "chinos"){
+            this.agregarPiquero(2)
+            this.agregarArquero(25)
+            this.agregarCaballero(2)
+        }
+        if(name == "ingleses"){
+            this.agregarPiquero(10)
+            this.agregarArquero(10)
+            this.agregarCaballero(10)
+        }
+        if(name == "bizantinos"){
+            this.agregarPiquero(5)
+            this.agregarArquero(8)
+            this.agregarCaballero(15)
+        }
+        
     }
-    agregarArquero() {
-        this.arquero.push(new Guerrero("arquero", 10))
-        this.updatePuntos()
+    agregarPiquero(number) {
+        for(let i =0; i < number; i++){
+            this.piquero.push(new Guerrero("piquero", 5))
+            this.updatePuntos()
+        }
     }
-    agregarCaballero() {
-        this.caballero.push(new Guerrero("caballero", 20))
-        this.updatePuntos()
+    agregarArquero(number) {
+        for(let i =0; i < number; i++){
+            this.arquero.push(new Guerrero("arquero", 10))
+            this.updatePuntos()
+        }
+    }
+    agregarCaballero(number) {
+        for(let i =0; i < number; i++){
+            this.caballero.push(new Guerrero("caballero", 20))
+            this.updatePuntos()
+        }
     }
 
     updatePuntos() {

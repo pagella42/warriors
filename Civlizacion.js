@@ -12,7 +12,7 @@ class Civilizacion {
     }
 
     crearEjercito(){
-        this.ejercitos.push(new Ejercito())
+        this.ejercitos.push((new Ejercito()).init(this.name))
     }
 
 }
